@@ -1,4 +1,4 @@
-# ffc-messaging
+# adp-messaging
 
 Messaging npm module for FFC services
 
@@ -7,7 +7,7 @@ Messaging npm module for FFC services
 ### Installation
 
 ```
-npm install --save ffc-messaging
+npm install --save adp-messaging
 ```
 
 ### Configuration
@@ -16,7 +16,9 @@ npm install --save ffc-messaging
 
 `host` - Azure Service Bus namespace, for example, `myservicebus.servicebus.windows.net`
 
-`useCredentialChain` - Boolean value for whether to authenticate connection with using Azure's credential chain.  For example, set this to true if you wish to use [AAD Pod Identity](https://github.com/Azure/aad-pod-identity).  If `false`, then `username` and `password` or `connectionString` are required.
+`useCredentialChain` - Boolean value for whether to authenticate connection with using Azure's credential chain.  For example, set this to true if you wish to use [Azure Workload Identity](https://github.com/Azure/azure-workload-identity).  If `false`, then `username` and `password` or `connectionString` are required.
+
+`managedIdentityClientId` - Optionally, client Id of the workload identity can be specified if there are multiple applications using different workload identities to authenticate.
 
 `connectionString` - Azure Service Bus connection string.  If provided, `username` and `password` are ignored.
 

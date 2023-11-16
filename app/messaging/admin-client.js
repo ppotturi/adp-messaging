@@ -21,7 +21,11 @@ class AdminClient {
   }
 
   getCredentials () {
-    return new DefaultAzureCredential()
+    if (this.config.managedIdentityClientId) {
+      return new DefaultAzureCredential({ managedIdentityClientId: this.config.managedIdentityClientId })
+    } else {
+      return new DefaultAzureCredential()
+    }
   }
 
   async getClient () {

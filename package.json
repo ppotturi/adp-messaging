@@ -1,11 +1,11 @@
 {
-  "name": "ffc-messaging",
-  "version": "2.8.0",
-  "description": "Messaging npm module for FFC services",
+  "name": "adp-messaging",
+  "version": "2.9.0",
+  "description": "Messaging npm module for ADP Platform services",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DEFRA/ffc-messaging.git"
+    "url": "git+https://github.com/DEFRA/adp-messaging.git"
   },
   "author": "Defra DDTS",
   "contributors": [
@@ -14,12 +14,12 @@
   ],
   "license": "OGL-UK-3.0",
   "bugs": {
-    "url": "https://github.com/DEFRA/ffc-messaging/issues"
+    "url": "https://github.com/DEFRA/adp-messaging/issues"
   },
-  "homepage": "https://github.com/DEFRA/ffc-messaging#readme",
+  "homepage": "https://github.com/DEFRA/adp-messaging#readme",
   "dependencies": {
-    "@azure/identity": "3.3.2",
-    "@azure/service-bus": "7.9.2",
+    "@azure/identity": "3.4.0",
+    "@azure/service-bus": "7.9.3",
     "joi": "17.11.0"
   },
   "devDependencies": {
