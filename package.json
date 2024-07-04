@@ -1,6 +1,6 @@
 {
   "name": "adp-messaging",
-  "version": "2.9.0",
+  "version": "2.10.0",
   "description": "Messaging npm module for ADP Platform services",
   "main": "index.js",
   "repository": {
@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/DEFRA/adp-messaging#readme",
   "dependencies": {
-    "@azure/identity": "3.4.0",
-    "@azure/service-bus": "7.9.3",
+    "@azure/identity": "4.3.0",
+    "@azure/service-bus": "7.9.5",
     "joi": "17.11.0"
   },
   "devDependencies": {
